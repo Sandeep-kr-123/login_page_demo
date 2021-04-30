@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4618b50b4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <link rel="icon" href="1.png" type="image/png">
+    <title>Mymedia-log in or signup</title>
 </head>
 
 <body>
@@ -19,19 +20,33 @@
                 <input type="text" name="userid" id="userid" placeholder="Email address or Phone number">
             </div>
             <div>
-                <input type="text" name="password" id="password" placeholder="Password">
+                <input type="password" name="passwd" id="passwd" placeholder="Password" onblur="checkpasswd()">
+                <div id="feedback"></div>
             </div>
             <div>
                 <button>Log In</button>
             </div>
-            <h4><a href="#" style="text-decoration: none;">Forgotten password?</a></h4>
+            <h4><a href="" id="forgetpasswd">Forgotten password?</a></h4>
             <hr>
             <P>or</P>
             <div>
-                <button style="background-color: green;">Create New Account</button>
+                <button style="background-color: green;" id="newaccount"
+                    onclick="window.location.href='newaccount.html';">Create New
+                    Account</button>
             </div>
         </div>
     </div>
+
+    <footer>
+        <div>
+            <span>
+                <hr> Mymedia © 2021
+                <hr>
+            </span>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
 </body>
 
 </html>

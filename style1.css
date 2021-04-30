@@ -3,13 +3,13 @@
     background-color: white;
 }
 
-h1,h4,p{
+h1,p{
     text-align: center;
 }
 
 h1{
     font-size: 3rem; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box{
@@ -19,6 +19,10 @@ h1{
     border-radius: 10px;
     background-color: white;
     
+}
+
+form div{
+    display: grid;
 }
 
 input{
@@ -48,17 +52,4 @@ button{
 
 a{
     text-decoration: none;
-}
-
-footer{
-    display: flex;
-}
-
-footer div{
-    padding-top: 100px;
-    margin: auto;
-}
-
-span{
-    background-color: rgb(255, 251, 251);
 }
